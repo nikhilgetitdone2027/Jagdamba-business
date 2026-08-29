@@ -47,8 +47,11 @@ export const CateringSection: React.FC<CateringSectionProps> = ({ onViewMenu }) 
             <div className="relative rounded-sm overflow-hidden bg-[#5D0E11] p-1.5 shadow-2xl border-2 border-[#D4AF37] group">
               <div className="aspect-[4/3] rounded-sm overflow-hidden relative">
                 <img
-                  src="https://images.unsplash.com/photo-1555244162-803834f70033?auto=format&fit=crop&w=1200&q=80"
+                  src="/images/catering/catering-1.jpg"
                   alt="Jagdamba Catering Food Buffet Feast"
+                  onError={(e) => {
+                    e.currentTarget.src = "https://images.unsplash.com/photo-1555244162-803834f70033?auto=format&fit=crop&w=1200&q=80";
+                  }}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                   loading="lazy"
                 />

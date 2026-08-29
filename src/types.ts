@@ -57,6 +57,7 @@ export interface MenuData {
   type: 'veg' | 'non-veg';
   title: string;
   subtitle: string;
+  pdfUrl: string;
   categories: MenuCategory[];
 }
 
@@ -68,6 +69,17 @@ export interface GalleryItem {
   image: string;
   caption: string;
   aspect?: 'portrait' | 'landscape' | 'square';
+}
+
+export interface VideoItem {
+  id: string;
+  title: string;
+  category: 'catering' | 'lighting' | 'decoration' | 'events' | 'wedding';
+  categoryLabel: string;
+  videoSrc: string;
+  poster: string;
+  duration?: string;
+  description: string;
 }
 
 export interface OwnerProfile {

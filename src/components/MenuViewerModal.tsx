@@ -164,8 +164,43 @@ export const MenuViewerModal: React.FC<MenuViewerModalProps> = ({
             ))}
           </div>
 
+          {/* Official Terms & Conditions from Menu PDF */}
+          <div className="mt-8 p-5 rounded-sm bg-[#FAF7F2] border border-[#D4AF37] text-left">
+            <h4 className="font-cinzel text-sm sm:text-base font-bold text-[#5D0E11] mb-2 flex items-center gap-2">
+              <span className="w-2 h-2 rotate-45 bg-[#D4AF37]" />
+              Terms & Conditions (From Official Menu)
+            </h4>
+            <ul className="text-xs text-[#5D0E11]/90 space-y-1.5 list-disc list-inside">
+              <li>20% will be charged if the function is less than 50 persons.</li>
+              <li>Tentative booking is not confirmed unless advance is paid.</li>
+              {isVeg ? (
+                <>
+                  <li><strong>Jain Preparations:</strong> Please notify us in advance regarding ingredients not required and total count of Jain guests.</li>
+                  <li>Booking will be confirmed against <strong>50% advance payment</strong> and rest of the bills to be settled at the end of the party.</li>
+                  <li>In the event of cancellation, advance amount will be refunded after deduction of service charges (10%).</li>
+                </>
+              ) : (
+                <>
+                  <li>Booking will be confirmed against <strong>60% advance payment</strong> and rest of the bills to be settled at the end of the party.</li>
+                  <li>In the event of cancellation, advance amount will be refunded after deduction of service charges (20%).</li>
+                </>
+              )}
+              <li>Plate count will determine the final number of persons.</li>
+              <li>Damages to catering properties if any will be charged.</li>
+            </ul>
+
+            <div className="mt-4 pt-3 border-t border-[#D4AF37]/30 flex flex-wrap items-center justify-between gap-2 text-xs text-[#5D0E11]">
+              <div>
+                <strong>Contact Person:</strong> Chef Haribansh Kumar Pandey (S/O Shri Damodar Pandey)
+              </div>
+              <div>
+                Sonar Dangal, Opposite of Durga Mandir, Chirkunda, Dhanbad (JH)
+              </div>
+            </div>
+          </div>
+
           {/* Footer Callout */}
-          <div className="mt-8 p-5 rounded-sm bg-[#5D0E11] text-[#FFFDD0] text-center border-2 border-[#D4AF37]">
+          <div className="mt-6 p-5 rounded-sm bg-[#5D0E11] text-[#FFFDD0] text-center border-2 border-[#D4AF37]">
             <h4 className="font-cinzel text-base font-bold text-[#D4AF37] mb-1">
               Ready to Customize Your Event Menu?
             </h4>

@@ -27,11 +27,12 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenMenuModal }) => {
   const navLinks = [
     { name: 'Home', href: '#home' },
     { name: 'About', href: '#about' },
+    { name: 'Our Family', href: '#owners' },
     { name: 'Services', href: '#services' },
     { name: 'Catering', href: '#catering' },
     { name: 'Gallery', href: '#gallery' },
+    { name: 'Videos', href: '#videos' },
     { name: 'Menu', href: '#menu' },
-    { name: 'Our Story', href: '#owners' },
     { name: 'Contact', href: '#contact' },
   ];
 

@@ -8,6 +8,7 @@ import { LightingSection } from './components/LightingSection';
 import { DecorationSection } from './components/DecorationSection';
 import { EventPlanningSection } from './components/EventPlanningSection';
 import { GallerySection } from './components/GallerySection';
+import { VideoSection } from './components/VideoSection';
 import { MenuSection } from './components/MenuSection';
 import { OwnersSection } from './components/OwnersSection';
 import { ContactSection } from './components/ContactSection';
@@ -43,31 +44,34 @@ export default function App() {
         {/* 2. About Us Section */}
         <AboutSection />
 
-        {/* 3. Services Overview */}
-        <ServicesSection onSelectService={(id) => scrollToSection(`#${id}`)} />
-
-        {/* 4. Dedicated Catering Section */}
-        <CateringSection onViewMenu={() => scrollToSection('#menu')} />
-
-        {/* 5. Dedicated Lighting Section */}
-        <LightingSection />
-
-        {/* 6. Dedicated Decoration Section */}
-        <DecorationSection />
-
-        {/* 7. Event Planning Process */}
-        <EventPlanningSection />
-
-        {/* 8. Previous Works / Gallery */}
-        <GallerySection />
-
-        {/* 9. Menu Experience */}
-        <MenuSection />
-
-        {/* 10. Owners & Family Section */}
+        {/* 3. Owners / Our Family Section */}
         <OwnersSection />
 
-        {/* 11. Contact & Location Section */}
+        {/* 4. Services Overview */}
+        <ServicesSection onSelectService={(id) => scrollToSection(`#${id}`)} />
+
+        {/* 5. Dedicated Catering Section */}
+        <CateringSection onViewMenu={() => scrollToSection('#menu')} />
+
+        {/* 6. Dedicated Lighting Section */}
+        <LightingSection />
+
+        {/* 7. Dedicated Decoration Section */}
+        <DecorationSection />
+
+        {/* 8. Event Planning Process */}
+        <EventPlanningSection />
+
+        {/* 9. Previous Works / Gallery */}
+        <GallerySection />
+
+        {/* 10. Event Highlights / Videos */}
+        <VideoSection />
+
+        {/* 11. Menu Experience */}
+        <MenuSection />
+
+        {/* 12. Contact & Location Section */}
         <ContactSection />
       </main>
 

@@ -31,17 +31,35 @@ export const OwnersSection: React.FC = () => {
               </div>
 
               <div>
-                {/* Photo Placeholder */}
-                <div className="relative aspect-square max-w-[200px] mx-auto rounded-full overflow-hidden bg-[#140204] border-4 border-[#D4AF37] shadow-xl mb-6 flex flex-col items-center justify-center p-4 text-center">
-                  <div className="w-16 h-16 rounded-full bg-[#5D0E11] border border-[#D4AF37] flex items-center justify-center text-[#D4AF37] mb-2">
-                    <ChefHat className="w-8 h-8" />
+                {/* Photo or Placeholder */}
+                <div className="relative aspect-square max-w-[200px] mx-auto rounded-full overflow-hidden bg-[#140204] border-4 border-[#D4AF37] shadow-xl mb-6 flex flex-col items-center justify-center p-2 text-center group-hover:border-[#FFFDD0] transition-colors">
+                  {founder.image ? (
+                    <img
+                      src={founder.image}
+                      alt={founder.name}
+                      className="w-full h-full object-cover rounded-full"
+                      onError={(e) => {
+                        // Fallback if file not yet uploaded
+                        e.currentTarget.style.display = 'none';
+                        const parent = e.currentTarget.parentElement;
+                        if (parent) {
+                          const placeholder = parent.querySelector('.owner-placeholder-content');
+                          if (placeholder) placeholder.classList.remove('hidden');
+                        }
+                      }}
+                    />
+                  ) : null}
+                  <div className={`owner-placeholder-content flex flex-col items-center justify-center ${founder.image ? 'hidden' : ''}`}>
+                    <div className="w-16 h-16 rounded-full bg-[#5D0E11] border border-[#D4AF37] flex items-center justify-center text-[#D4AF37] mb-2">
+                      <ChefHat className="w-8 h-8" />
+                    </div>
+                    <span className="text-[11px] font-bold text-[#D4AF37] leading-tight">
+                      [PHOTO PLACEHOLDER]
+                    </span>
+                    <span className="text-[9px] text-[#FFFDD0]/80 mt-0.5">
+                      /images/owners/founder.jpg
+                    </span>
                   </div>
-                  <span className="text-[11px] font-bold text-[#D4AF37] leading-tight">
-                    [PHOTO PLACEHOLDER]
-                  </span>
-                  <span className="text-[9px] text-[#FFFDD0]/80 mt-0.5">
-                    Chef Haribansh Pandey
-                  </span>
                 </div>
 
                 {/* Founder Name & Role */}
@@ -90,17 +108,34 @@ export const OwnersSection: React.FC = () => {
                 </div>
 
                 <div>
-                  {/* Photo Placeholder */}
-                  <div className="relative aspect-square max-w-[160px] mx-auto rounded-full overflow-hidden bg-[#FAF7F2] border-3 border-[#D4AF37] shadow-md mb-5 flex flex-col items-center justify-center p-3 text-center">
-                    <div className="w-12 h-12 rounded-full bg-[#5D0E11] border border-[#D4AF37] flex items-center justify-center text-[#D4AF37] mb-1.5">
-                      <User className="w-6 h-6" />
+                  {/* Photo or Placeholder */}
+                  <div className="relative aspect-square max-w-[160px] mx-auto rounded-full overflow-hidden bg-[#FAF7F2] border-3 border-[#D4AF37] shadow-md mb-5 flex flex-col items-center justify-center p-2 text-center group-hover:border-[#5D0E11] transition-colors">
+                    {owner.image ? (
+                      <img
+                        src={owner.image}
+                        alt={owner.name}
+                        className="w-full h-full object-cover rounded-full"
+                        onError={(e) => {
+                          e.currentTarget.style.display = 'none';
+                          const parent = e.currentTarget.parentElement;
+                          if (parent) {
+                            const placeholder = parent.querySelector('.son-placeholder-content');
+                            if (placeholder) placeholder.classList.remove('hidden');
+                          }
+                        }}
+                      />
+                    ) : null}
+                    <div className={`son-placeholder-content flex flex-col items-center justify-center ${owner.image ? 'hidden' : ''}`}>
+                      <div className="w-12 h-12 rounded-full bg-[#5D0E11] border border-[#D4AF37] flex items-center justify-center text-[#D4AF37] mb-1.5">
+                        <User className="w-6 h-6" />
+                      </div>
+                      <span className="text-[10px] font-bold text-[#5D0E11]">
+                        [PHOTO PLACEHOLDER]
+                      </span>
+                      <span className="text-[9px] text-[#4A3236]">
+                        {owner.image || `/images/owners/son-${index + 1}.jpg`}
+                      </span>
                     </div>
-                    <span className="text-[10px] font-bold text-[#5D0E11]">
-                      [PHOTO PLACEHOLDER]
-                    </span>
-                    <span className="text-[9px] text-[#4A3236]">
-                      Son / Partner {index + 1}
-                    </span>
                   </div>
 
                   {/* Name & Role */}

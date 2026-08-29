@@ -14,8 +14,12 @@ export const Hero: React.FC<HeroProps> = ({ onExploreServices, onViewMenu, onCon
       {/* Background Image with Deep Maroon Luxury Overlay and Dot Pattern */}
       <div className="absolute inset-0 z-0">
         <img
-          src="https://images.unsplash.com/photo-1555244162-803834f70033?auto=format&fit=crop&w=2000&q=85"
+          src="/images/hero/hero.jpg"
           alt="Jagdamba Catering and Event Feast Setup"
+          onError={(e) => {
+            // Fallback if local hero.jpg is not yet uploaded
+            e.currentTarget.src = "https://images.unsplash.com/photo-1555244162-803834f70033?auto=format&fit=crop&w=2000&q=85";
+          }}
           className="w-full h-full object-cover object-center scale-105 transition-transform duration-1000 ease-out"
         />
         {/* Multi-layered dark maroon vignette & gradient overlay */}

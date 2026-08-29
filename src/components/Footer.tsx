@@ -16,13 +16,14 @@ export const Footer: React.FC = () => {
   const navLinks = [
     { name: 'Home', href: '#home' },
     { name: 'About Us', href: '#about' },
+    { name: 'Our Family', href: '#owners' },
     { name: 'Our Services', href: '#services' },
     { name: 'Catering Feasts', href: '#catering' },
     { name: 'Lighting & Ambience', href: '#lighting' },
     { name: 'Decoration', href: '#decoration' },
     { name: 'Our Works', href: '#gallery' },
+    { name: 'Event Videos', href: '#videos' },
     { name: 'Curated Menu', href: '#menu' },
-    { name: 'The Family', href: '#owners' },
     { name: 'Contact & Directions', href: '#contact' },
   ];
 

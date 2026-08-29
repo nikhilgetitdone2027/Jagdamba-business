@@ -1,5 +1,23 @@
 import { GalleryItem } from '../types';
 
+/**
+ * =========================================================================
+ * JAGDAMBA CATERER - GALLERY / PREVIOUS WORKS DATA
+ * =========================================================================
+ * You can easily add, edit, or reorder your photographs here.
+ * Place your own images in:
+ *   - /public/images/gallery/
+ *   - /public/images/catering/
+ *   - /public/images/lighting/
+ *   - /public/images/decoration/
+ *   - /public/images/events/
+ *
+ * Supported categories:
+ *   - 'catering'
+ *   - 'lighting'
+ *   - 'decoration'
+ *   - 'events'
+ */
 export const galleryItems: GalleryItem[] = [
   {
     id: 'g1',
