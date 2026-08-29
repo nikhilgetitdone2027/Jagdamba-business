@@ -34,7 +34,7 @@ export const AboutSection: React.FC = () => {
             </p>
 
             <p className="font-sans text-sm sm:text-base leading-relaxed text-[#4A3236]">
-              Every auspicious wedding, reception, and family gathering deserves a tailored menu that delights every guest. Under the guidance of <strong className="text-[#5D0E11] font-bold">{businessData.leadChef}</strong>, our experienced culinary team specializes in designing bespoke menus crafted specifically around each customer's preferences and dietary traditions.
+              Every auspicious wedding, reception, and family gathering deserves a tailored menu that delights every guest. Under the guidance of <strong className="text-[#5D0E11] font-bold">Damodar Pandey</strong>, our experienced culinary team specializes in designing bespoke menus crafted specifically around each customer's preferences and dietary traditions.
             </p>
 
             {/* Specialization List */}
@@ -55,8 +55,7 @@ export const AboutSection: React.FC = () => {
                 ))}
               </div>
             </div>
-
-            {/* Chef Attribution Note */}
+           {/* Chef Attribution Note */}
             <div className="p-4 rounded-sm bg-[#FDFBF7] border border-[#D4AF37]/50 shadow-sm flex items-start gap-3.5">
               <div className="p-2 rounded-sm bg-[#5D0E11] text-[#D4AF37] shrink-0 mt-0.5">
                 <UserCheck className="w-4 h-4" />
@@ -66,7 +65,7 @@ export const AboutSection: React.FC = () => {
                   Personalized Menu Customization
                 </h5>
                 <p className="text-xs sm:text-sm text-[#4A3236] mt-0.5">
-                  Led directly by <strong className="text-[#5D0E11]">{businessData.leadChef}</strong>, we sit down with families to curate balanced, multi-course menus tailored to your guest profile and auspicious event timelines.
+                  Led directly by <strong className="text-[#5D0E11]">Damodar Pandey</strong>, we sit down with families to curate balanced, multi-course menus tailored to your guest profile and auspicious event timelines.
                 </p>
               </div>
             </div>
@@ -78,31 +77,18 @@ export const AboutSection: React.FC = () => {
               {/* Outer Golden Border Framing */}
               <div className="relative rounded-sm overflow-hidden bg-[#5D0E11] p-1.5 shadow-2xl border-2 border-[#D4AF37]">
                 <div className="relative aspect-[4/5] rounded-sm overflow-hidden bg-[#3D0C13] flex flex-col items-center justify-center text-center p-8 group">
+                  <img
+                    src="/images/owners/founder.jpg"
+                    alt="Damodar Pandey"
+                    className="absolute inset-0 w-full h-full object-cover"
+                  />
                   {/* Visual Background Accent */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#140204] via-[#5D0E11]/70 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#140204] via-[#5D0E11]/75 to-transparent" />
 
-                  {/* Icon and Founder Placeholder Area */}
-                  <div className="relative z-10 flex flex-col items-center">
-                    <div className="w-24 h-24 rounded-full bg-[#140204] border-2 border-[#D4AF37] flex items-center justify-center text-[#D4AF37] shadow-inner mb-4">
-                      <ChefHat className="w-12 h-12" />
-                    </div>
-                    <span className="font-cinzel text-xl font-bold text-[#FFFDD0] tracking-wide">
-                      {businessData.leadChef}
-                    </span>
-                    <span className="font-sans text-xs uppercase tracking-widest text-[#D4AF37] font-bold mt-1">
-                      Founder & Master Chef
-                    </span>
-                    <p className="text-xs text-[#FFFDD0]/80 mt-3 max-w-xs leading-relaxed">
-                      Leading menu curation, ingredient selection, and authentic taste preservation for over 30 years.
-                    </p>
-
-                    <div className="mt-4 px-3 py-1 rounded-sm bg-[#140204]/90 border border-[#D4AF37]/50 text-[11px] text-[#FFFDD0]">
-                      Founder / Chef Photograph Placeholder
-                    </div>
-                  </div>
                 </div>
               </div>
 
+            
               {/* Floating Highlighted Statistic Card */}
               <div className="absolute -bottom-6 -left-4 sm:-left-6 bg-[#5D0E11] text-[#FFFDD0] p-4 sm:p-5 rounded-sm border-2 border-[#D4AF37] shadow-2xl flex items-center gap-4">
                 <div className="p-3 rounded-sm bg-[#140204] border border-[#D4AF37]/40 text-[#D4AF37]">

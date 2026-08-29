@@ -6,9 +6,9 @@ import { VideoItem } from '../types';
  * =========================================================================
  * You can easily add your own local MP4 videos here.
  * Place video files in:
- *   - /public/videos/wedding-setup.mp4
- *   - /public/videos/catering-live-counters.mp4
- *   - /public/videos/mandap-decor.mp4
+ *   - /public/videos/event-highlight.mp4
+ *   - /public/videos/catering-showcase.mp4
+ *   - /public/videos/venue-decor-highlight.mp4
  *   - /public/videos/lighting-ambience.mp4
  *
  * Supported categories:
@@ -20,33 +20,33 @@ import { VideoItem } from '../types';
 export const videosData: VideoItem[] = [
   {
     id: 'vid-1',
-    title: 'Grand Wedding Banquet & Hospitality',
+    title: 'Celebration Highlights & Hospitality',
     category: 'wedding',
     categoryLabel: 'Wedding Setup',
-    videoSrc: '/videos/wedding-setup.mp4',
-    poster: 'https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1200&q=80',
-    duration: 'Banqueting Film',
-    description: 'Comprehensive setup walkthrough showcasing royal floral entryways, buffet line presentation, and welcoming guest hospitality.',
+    videoSrc: '/videos/event-highlight.mp4',
+    poster: '/images/decoration/outdoor-live-buffet.jpg',
+    duration: 'Event Highlights',
+    description: 'A look at the welcoming atmosphere, coordinated service, and memorable moments that bring a family celebration together.',
   },
   {
     id: 'vid-2',
-    title: 'Live Chaat & Tandoori Counter Showcase',
+    title: 'Live Catering Counter Showcase',
     category: 'catering',
     categoryLabel: 'Catering Live Counters',
-    videoSrc: '/videos/catering-live-counters.mp4',
-    poster: 'https://images.unsplash.com/photo-1555244162-803834f70033?auto=format&fit=crop&w=1200&q=80',
-    duration: 'Culinary Reel',
-    description: 'Live interactive counters featuring sizzling kebabs, tandoor roasted naans, and hot Banarasi street chaats prepared fresh.',
+    videoSrc: '/videos/catering-showcase.mp4',
+    poster: '/images/decoration/lantern-lit-buffet.jpg',
+    duration: 'Catering Reel',
+    description: 'Watch our catering presentation in action, from thoughtfully arranged buffet counters to attentive service for every guest.',
   },
   {
     id: 'vid-3',
-    title: 'Royal Mandap & Floral Stage Decor',
+    title: 'Venue Décor & Buffet Presentation',
     category: 'decoration',
     categoryLabel: 'Floral Decoration',
-    videoSrc: '/videos/mandap-decor.mp4',
-    poster: 'https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=1200&q=80',
-    duration: 'Decor Tour',
-    description: 'Detailed visual tour of a custom-designed royal wedding mandap with exotic fresh flower cascades and golden chandeliers.',
+    videoSrc: '/videos/venue-decor-highlight.mp4',
+    poster: '/images/decoration/royal-buffet-counter.jpg',
+    duration: 'Décor Tour',
+    description: 'A showcase of festive venue styling, illuminated buffet presentation, and the details that give every event its own character.',
   },
   {
     id: 'vid-4',
@@ -57,5 +57,15 @@ export const videosData: VideoItem[] = [
     poster: 'https://images.unsplash.com/photo-1527529482837-4698179dc6ce?auto=format&fit=crop&w=1200&q=80',
     duration: 'Night Highlights',
     description: 'Magical 100-foot fairy light pathway tunnel and synchronized LED stage lighting creating a fairy-tale evening atmosphere.',
+  },
+  {
+    id: 'vid-5',
+    title: 'Celebration Moments Reel',
+    category: 'events',
+    categoryLabel: 'Event Highlights',
+    videoSrc: '/videos/celebration-reel.mp4',
+    poster: '/images/decoration/festive-sweets-counter.jpg',
+    duration: 'Celebration Reel',
+    description: 'A lively glimpse of the colour, hospitality, and carefully coordinated details that make each Jagdamba celebration memorable.',
   },
 ];

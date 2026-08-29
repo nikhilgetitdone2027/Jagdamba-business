@@ -17,13 +17,13 @@ export const businessData: BusinessInfo = {
     fullAddress: 'Sonar Dangal, Opposite of Durga Mandir, Chirkunda, Dhanbad, Jharkhand',
     googleMapsUrl: 'https://maps.google.com/?q=Sonar+Dangal+Opposite+of+Durga+Mandir+Chirkunda+Dhanbad+Jharkhand',
   },
-  phones: ['+91 91137 80293', '+91 96930 70308'],
+  phones: ['+91 9113780293', '+91 9693070308'],
   primaryPhone: '+919113780293',
   whatsappNumber: '919113780293',
   whatsappDefaultMessage:
     'Namaste! I would like to inquire about catering and event planning services from Jagdamba Caterer & Event Planner for an upcoming celebration.',
   email: 'haribanshpandey2011@gmail.com',
-  serviceAreas: ['Dhanbad', 'Chirkunda', 'Bokaro', 'Asansol', 'Kulti', 'Ranchi', 'Jharkhand & West Bengal Region'],
+  serviceAreas: ['Dhanbad', 'Chirkunda', 'Bokaro', 'Asansol', 'Kulti', 'Ranchi', 'Bihar', 'Jharkhand & West Bengal Region'],
   cuisines: [
     'North Indian',
     'South Indian',

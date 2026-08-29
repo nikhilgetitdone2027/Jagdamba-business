@@ -168,9 +168,7 @@ export const OwnersSection: React.FC = () => {
         </div>
 
         {/* Family Enterprise Note */}
-        <div className="mt-12 text-center text-xs text-[#5D0E11]/70 italic max-w-xl mx-auto">
-          * Profile details and photographs can be personalized in the central data configuration.
-        </div>
+       
       </div>
     </section>
   );

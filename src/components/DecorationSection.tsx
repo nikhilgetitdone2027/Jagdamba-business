@@ -5,28 +5,28 @@ import { Flower2, Sparkles, Heart, Crown, LayoutGrid } from 'lucide-react';
 export const DecorationSection: React.FC = () => {
   const decorElements = [
     {
-      title: 'Grand Stage & Mandap Decoration',
-      subtitle: 'Ceremonial Centerpiece',
-      desc: 'Breathtaking royal mandaps and reception backdrops draped in rich silks, fresh exotic florals, and carved ornamental pillars.',
-      image: 'https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1000&q=80',
+      title: 'Starlit Live Buffet',
+      subtitle: 'Outdoor Culinary Experience',
+      desc: 'A sweeping outdoor live-counter setup with warm string lights, cascading greenery, soft fabric drapes, and chefs serving guests fresh from the kitchen.',
+      image: '/images/decoration/outdoor-live-buffet.jpg',
     },
     {
-      title: 'Majestic Entrance Gateways & Tunnels',
-      subtitle: 'First Impression of Royalty',
-      desc: 'Floral arches with cascading jasmine, roses, marigolds, and brass urlis illuminated by soft floor diyas.',
-      image: 'https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=1000&q=80',
+      title: 'Lantern-Lit Banquet',
+      subtitle: 'Ambient Buffet Styling',
+      desc: 'A graceful buffet pavilion dressed in flowing white fabric, glowing pendant lanterns, and violet uplighting for an elegant evening reception.',
+      image: '/images/decoration/lantern-lit-buffet.jpg',
     },
     {
-      title: 'VIP Banquet Dining & Table Settings',
-      subtitle: 'Sophisticated Guest Comfort',
-      desc: 'Luxurious table linens, gold-rimmed glassware, royal chair sashes, and elegant floral centerpiece arrangements.',
-      image: 'https://images.unsplash.com/photo-1555244162-803834f70033?auto=format&fit=crop&w=1000&q=80',
+      title: 'Regal Carved Buffet Counter',
+      subtitle: 'Heritage-Inspired Presentation',
+      desc: 'An illuminated gold-and-black buffet façade with intricate patterned panels, decorative lamps, and a statement chef centerpiece for a royal welcome.',
+      image: '/images/decoration/royal-buffet-counter.jpg',
     },
     {
-      title: 'Decorative Ambience & Photo Corners',
-      subtitle: 'Memories for a Lifetime',
-      desc: 'Curated selfie corners, vintage brass props, floral swing installations, and integrated mood lighting.',
-      image: 'https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&w=1000&q=80',
+      title: 'Festive Mithai & Dessert Counter',
+      subtitle: 'Traditional Celebration Display',
+      desc: 'A vibrant sweets counter framed by rich red drapery, fresh florals, colourful display shelves, and festive lighting for special celebrations.',
+      image: '/images/decoration/festive-sweets-counter.jpg',
     },
   ];
 
