@@ -1,0 +1,101 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: "Playfair Display", Georgia, serif;
+    --font-cinzel: "Cinzel", "Playfair Display", serif;
+    --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  }
+}
+
+.font-serif {
+  font-family: var(--font-serif);
+}
+
+.font-cinzel {
+  font-family: var(--font-cinzel);
+}
+
+.font-sans {
+  font-family: var(--font-sans);
+}
+
+/* Custom Luxury Gradients & Shimmers */
+.gold-gradient-text {
+  background: linear-gradient(135deg, #FFFDD0 0%, #D4AF37 50%, #AA7C11 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-border-gradient {
+  border-image: linear-gradient(to right, #AA7C11, #FFFDD0, #D4AF37, #AA7C11) 1;
+}
+
+/* Theme Colors */
+.bg-regal-maroon {
+  background-color: #5D0E11;
+}
+
+.bg-burgundy-900 {
+  background-color: #2D080E;
+}
+
+.bg-burgundy-800 {
+  background-color: #4A0E17;
+}
+
+.bg-burgundy-700 {
+  background-color: #5D0E11;
+}
+
+.text-gold-400 {
+  color: #D4AF37;
+}
+
+.text-gold-300 {
+  color: #FFFDD0;
+}
+
+.text-gold-500 {
+  color: #D4AF37;
+}
+
+.border-gold-500\/30 {
+  border-color: rgba(212, 175, 55, 0.3);
+}
+
+.border-gold-500\/50 {
+  border-color: rgba(212, 175, 55, 0.5);
+}
+
+/* Sophisticated Dark Radial Dot Pattern */
+.dark-dot-pattern {
+  background-image: radial-gradient(circle at 2px 2px, #D4AF37 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+/* Indian Ornamental Border Accent Utility */
+.ornamental-divider {
+  background-image: radial-gradient(circle at center, #D4AF37 2px, transparent 2.5px);
+  background-size: 16px 16px;
+}
+
+/* Smooth custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1A0307;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D4AF37;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #FFFDD0;
+}
+
