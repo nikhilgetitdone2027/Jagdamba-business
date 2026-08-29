@@ -163,12 +163,7 @@ export const VideoSection: React.FC = () => {
         </div>
 
         {/* Video Customization Information Callout */}
-        <div className="mt-12 p-4 sm:p-6 rounded-sm bg-[#5D0E11]/30 border border-[#D4AF37]/30 text-center max-w-2xl mx-auto">
-          <p className="text-xs text-[#FFFDD0]/80 leading-relaxed">
-            <strong className="text-[#D4AF37] font-semibold">Video Integration:</strong> Add your own event MP4 videos into <code className="bg-[#140204] px-1.5 py-0.5 rounded text-[#D4AF37]">public/videos/</code> and update titles in <code className="bg-[#140204] px-1.5 py-0.5 rounded text-[#D4AF37]">src/data/videos.ts</code>.
-          </p>
-        </div>
-      </div>
+      
 
       {/* Expanded Modal Video Player */}
       {modalVideo && (

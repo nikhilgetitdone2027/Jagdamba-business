@@ -104,10 +104,6 @@ export const GallerySection: React.FC = () => {
           ))}
         </div>
 
-        {/* Gallery Image Replacement Helper Note for Business */}
-        <div className="mt-12 text-center text-xs text-[#5D0E11]/70 italic">
-          * Photographs display representative wedding catering, stage lighting, and venue decoration setups by Jagdamba.
-        </div>
       </div>
 
       {/* Lightbox Modal */}
